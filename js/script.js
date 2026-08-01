@@ -1,4 +1,4 @@
-const WHATSAPP = '01038360794';
+const WHATSAPP = '+201038360794';
 
 function openWhatsApp(msg) {
   window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`, '_blank');
