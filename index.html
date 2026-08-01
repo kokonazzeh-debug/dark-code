@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝑫𝑨𝑹𝑲 𝑺𝑻Ø𝑹𝑬 CODE | خدمات برمجية</title>
+  <meta name="description" content="𝑫𝑨𝑹𝑲 𝑺𝑻Ø𝑹𝑬 CODE - خدمات برمجة احترافية: اسكربتات، بوتات واتساب وتليجرام، مواقع، أدوات برمجية حسب الطلب.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  <body class="no-scroll">
+
+  <!-- ===== INTRO SCREEN ===== -->
+  <div class="intro-overlay" id="intro">
+    <canvas class="intro-canvas" id="intro-canvas"></canvas>
+
+    <!-- Animated rings -->
+    <div class="ring ring-1"></div>
+    <div class="ring ring-2"></div>
+    <div class="ring ring-3"></div>
+
+    <div class="intro-content">
+      <div class="intro-logo">𝑫𝑨𝑹𝑲 𝑺𝑻Ø𝑹𝑬</div>
+      <div class="intro-badge">CØDE</div>
+      <div class="intro-sub" id="intro-sub"></div>
+      <div class="intro-loader">
+        <div class="loader-bar" id="loader-bar"></div>
+      </div>
+      <button class="intro-enter-btn" id="enter-btn">⚡ ادخل الموقع</button>
+      <div class="intro-hint">اكتب للدخول أو انتظر...</div>
+    </div>
+  </div>
+
+  <!-- ===== MAIN SITE ===== -->
+  <div class="site" id="site">
+
+    <!-- Advanced Background Layers -->
+    <div class="bg-layer bg-network">
+      <canvas id="network-canvas"></canvas>
+    </div>
+    <div class="bg-layer bg-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="blob blob-4"></div>
+    </div>
+    <div class="bg-layer bg-grid"></div>
+    <div class="bg-layer bg-code-rain" id="code-rain"></div>
+    <div class="bg-layer bg-scanline"></div>
+
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">𝑫𝑨𝑹𝑲 <span>CØDE</span></a>
+        <nav class="nav-links">
+          <a href="#home">الرئيسية</a>
+          <a href="#services">الخدمات</a>
+          <a href="#pricing">الأسعار</a>
+          <a href="#why">لماذا نحن؟</a>
+          <a href="#contact">تواصل</a>
+        </nav>
+        <button class="nav-cta glow-btn" onclick="openWhatsApp('مرحباً، أرغب في طلب خدمة برمجية')">اطلب خدمة</button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="pulse-dot"></span> متاح للطلب الآن
+        </div>
+        <h1 class="hero-title">
+          <span class="grad-text">برمجة</span> لا حدود لها<br>احتراف بأسعار <span class="grad-text">رمزية</span>
+        </h1>
+        <p class="hero-desc">
+          اسكربتات • بوتات واتساب وتليجرام • مواقع • أدوات برمجية • ترندات HTML
+          — كل شيء حسب طلبك من 𝑫𝑨𝑹𝑲 𝑺𝑻Ø𝑹𝑬 CODE
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="glow-btn glow-primary">🚀 استكشف الخدمات</a>
+          <a href="#pricing" class="glow-btn glow-outline">💰 الأسعار</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num" data-count="50">0</div>
+            <div class="stat-label">+ مشروع منجز</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-count="24">0</div>
+            <div class="stat-label">/ 7 دعم متواصل</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-count="100">0</div>
+            <div class="stat-label">% رضا العملاء</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-code-window">
+        <div class="code-window-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="file-name">dark_store.code</span>
+        </div>
+        <pre class="code-content" id="typed-code"></pre>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="section-head">
+        <span class="section-badge">💡 خدماتنا</span>
+        <h2 class="section-title">ماذا نصنع لك؟</h2>
+        <p class="section-desc">كل شيء له سعر رمزي، والجودة احترافية</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" onclick="openWhatsApp('مرحباً، أريد سكربت بوت واتساب')">
+          <div class="service-icon">🤖</div>
+          <h3>بوت واتساب</h3>
+          <p>بوت كامل بجميع المميزات: ردود تلقائية، أنظمة بوتات، لوحات تحكم.</p>
+          <span class="service-price">من 100 جنيه</span>
+        </div>
+        <div class="service-card" onclick="openWhatsApp('مرحباً، أريد سكربت بوت تليجرام')">
+          <div class="service-icon">✈️</div>
+          <h3>بوت تليجرام</h3>
+          <p>بوتات دفع، قنوات، اشتراكات، مهام تلقائية باحترافية عالية.</p>
+          <span class="service-price">من 100 جنيه</span>
+        </div>
+        <div class="service-card" onclick="openWhatsApp('مرحباً، أريد سكربت ترند الحب')">
+          <div class="service-icon">💘</div>
+          <h3>ترندات HTML</h3>
+          <p>ترند الحب، عيد الميلاد، ترندات رومانسية — ملف جاهز ومتوهج.</p>
+          <span class="service-price">من 50 جنيه</span>
+        </div>
+        <div class="service-card" onclick="openWhatsApp('مرحباً، أريد تصميم موقع')">
+          <div class="service-icon">🌐</div>
+          <h3>تصميم مواقع</h3>
+          <p>صفحات هبوط، مواقع كاملة، متاجر إلكترونية، لوحات تحكم.</p>
+          <span class="service-price">من 200 جنيه</span>
+        </div>
+        <div class="service-card" onclick="openWhatsApp('مرحباً، أريد أداة برمجية')">
+          <div class="service-icon">🛠️</div>
+          <h3>أدوات برمجية</h3>
+          <p>أدوات حسب الطلب، سكربتات جاهزة، تطبيقات مساعدة.</p>
+          <span class="service-price">من 80 جنيه</span>
+        </div>
+        <div class="service-card" onclick="openWhatsApp('مرحباً، أريد خدمة حسب الطلب')">
+          <div class="service-icon">✨</div>
+          <h3>حسب الطلب</h3>
+          <p>أي فكرة في دماغك — نحولها لسكربت أو موقع جاهز.</p>
+          <span class="service-price">حسب الاتفاق</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <div class="section-head">
+        <span class="section-badge">💰 الأسعار</span>
+        <h2 class="section-title">باقات رمزية للجميع</h2>
+        <p class="section-desc">أسعار تبدأ من هنا — والجودة عندنا في التوب دائماً</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3 class="price-name">🎬 ترندات</h3>
+          <div class="price-amount"><span class="currency">من</span> 50 <span class="currency">جنيه</span></div>
+          <ul class="price-features">
+            <li>✅ ترند الحب</li>
+            <li>✅ عيد ميلاد</li>
+            <li>✅ ترند رومانسي</li>
+            <li>✅ متوهج وأحترافي</li>
+          </ul>
+          <button class="glow-btn glow-primary w-full" onclick="openWhatsApp('مرحباً، أريد باقة ترندات HTML')">اطلب الآن</button>
+        </div>
+        <div class="price-card featured">
+          <div class="featured-badge">🔥 الأكثر طلباً</div>
+          <h3 class="price-name">🤖 بوتات</h3>
+          <div class="price-amount"><span class="currency">من</span> 100 <span class="currency">جنيه</span></div>
+          <ul class="price-features">
+            <li>✅ بوت واتساب كامل</li>
+            <li>✅ بوت تليجرام كامل</li>
+            <li>✅ بوت ديسكورد</li>
+            <li>✅ ردود تلقائية وأنظمة</li>
+          </ul>
+          <button class="glow-btn glow-pink w-full" onclick="openWhatsApp('مرحباً، أريد باقة بوتات')">اطلب الآن</button>
+        </div>
+        <div class="price-card">
+          <h3 class="price-name">🌐 مواقع</h3>
+          <div class="price-amount"><span class="currency">من</span> 200 <span class="currency">جنيه</span></div>
+          <ul class="price-features">
+            <li>✅ صفحة هبوط</li>
+            <li>✅ موقع متعدد الصفحات</li>
+            <li>✅ متجر إلكتروني</li>
+            <li>✅ لوحة تحكم</li>
+          </ul>
+          <button class="glow-btn glow-primary w-full" onclick="openWhatsApp('مرحباً، أريد باقة مواقع')">اطلب الآن</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="why" id="why">
+      <div class="section-head">
+        <span class="section-badge">⭐ لماذا نحن؟</span>
+        <h2 class="section-title">أسرار الموقع الرابح</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">⚡</div>
+          <h3>سرعة تسليم</h3>
+          <p>تسليم سريع جداً في نفس اليوم غالباً</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🎨</div>
+          <h3>جودة عالية</h3>
+          <p>أكواد نظيفة وواجهات متوهجة احترافية</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🔒</div>
+          <h3>دعم بعد التسليم</h3>
+          <p>تعديلات ودعم مستمر بعد الاستلام</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">💸</div>
+          <h3>أسعار رمزية</h3>
+          <p>أفضل سعر في السوق للجودة دي</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="contact-card">
+        <h2 class="section-title">جاهز تبدأ مشروعك؟ 🚀</h2>
+        <p>تواصل معنا مباشرة على واتساب واحنا نرد عليك فوراً</p>
+        <button class="glow-btn glow-green big" onclick="openWhatsApp('مرحباً، أرغب في طلب خدمة برمجية')">
+          💬 تواصل الآن على واتساب
+        </button>
+        <div class="contact-number">01503355489</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-logo">𝑫𝑨𝑹𝑲 𝑺𝑻Ø𝑹𝑬 <span>CØDE</span></div>
+      <p>جميع الحقوق محفوظة &copy; <span id="year"></span> 𝑫𝑨𝑹𝑲 𝑺𝑻Ø𝑹𝑬 CODE — برمجة بلا حدود</p>
+    </footer>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
