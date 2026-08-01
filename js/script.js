@@ -1,4 +1,4 @@
-const WHATSAPP = '01503355489';
+const WHATSAPP = '01038360794';
 
 function openWhatsApp(msg) {
   window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`, '_blank');
@@ -13,9 +13,9 @@ const enterBtn = document.getElementById('enter-btn');
 const introSub = document.getElementById('intro-sub');
 
 const introPhrases = [
-  '> loading dark_store.code ...',
+  '> loading dark_code.app ...',
   '> system ready ✓',
-  '> press ENTER to start',
+  '> click button to enter',
 ];
 
 let introReady = false;
@@ -31,24 +31,15 @@ function enterSite() {
   animateCounters();
 }
 
-// Auto-enter after load completes
+// Auto-enter disabled: site opens ONLY when the welcome button is pressed
 setTimeout(() => {
   introReady = true;
   enterBtn.classList.add('glow-on');
 }, 3400);
 
-setTimeout(() => {
-  if (!introDone) enterSite();
-}, 5000);
-
 enterBtn.addEventListener('click', (e) => {
   e.stopPropagation();
   enterSite();
-});
-introEl.addEventListener('click', enterSite);
-
-document.addEventListener('keydown', (e) => {
-  if ((e.key === 'Enter' || e.key === ' ') && !introDone) enterSite();
 });
 
 // Typing intro phrases
@@ -271,9 +262,9 @@ function initCursorGlow() {
    TYPED CODE (hero window)
    ========================================== */
 const codeLines = [
-  { text: '// Welcome to Dark Store Code', color: '#6a7a9a' },
+  { text: '// Welcome to Dark Code', color: '#6a7a9a' },
   { text: 'const developer = {', color: '#00f0ff' },
-  { text: "  name: 'DARK STORE',", color: '#c9d1d9' },
+  { text: "  name: 'DARK CODE',", color: '#c9d1d9' },
   { text: "  skill: 'Programming',", color: '#c9d1d9' },
   { text: '  services: [', color: '#00f0ff' },
   { text: "    'WhatsApp Bots',", color: '#ff2d95' },

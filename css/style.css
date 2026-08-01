@@ -654,11 +654,12 @@ section { position: relative; z-index: 1; padding: 90px 20px; max-width: 1200px;
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 30px 25px;
-  cursor: pointer;
   transition: all 0.35s ease;
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card::before {
@@ -701,7 +702,45 @@ section { position: relative; z-index: 1; padding: 90px 20px; max-width: 1200px;
   color: var(--cyan);
   font-size: 0.85rem;
   font-weight: 700;
+  margin-bottom: 18px;
+  align-self: flex-start;
 }
+
+.service-chat-btn {
+  margin-top: auto;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--green), #00b368);
+  box-shadow: var(--glow-green);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.service-chat-btn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -120%;
+  width: 60%;
+  height: 100%;
+  transform: skewX(-20deg);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.6s ease;
+}
+
+.service-chat-btn:hover::before { left: 150%; }
+.service-chat-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 35px rgba(0, 255, 136, 0.6);
+}
+.service-chat-btn:active { transform: translateY(0); }
 
 /* ============ PRICING ============ */
 .pricing-grid {
@@ -853,6 +892,42 @@ section { position: relative; z-index: 1; padding: 90px 20px; max-width: 1200px;
 .footer-logo span { color: var(--pink); text-shadow: var(--glow-pink); }
 
 .site-footer p { color: var(--muted); font-size: 0.85rem; }
+
+/* ============ FLOATING WHATSAPP ============ */
+.float-whatsapp {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: #fff;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.45);
+  transition: all 0.3s ease;
+}
+
+.float-whatsapp .float-icon {
+  font-size: 1.4rem;
+  animation: iconFloat 2.5s ease-in-out infinite;
+}
+
+.float-whatsapp:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 40px rgba(37, 211, 102, 0.65);
+}
+
+@media (max-width: 600px) {
+  .float-whatsapp .float-label { display: none; }
+  .float-whatsapp { padding: 16px; border-radius: 50%; }
+}
 
 /* ============ REVEAL ANIMATION ============ */
 .service-card, .price-card, .why-card, .section-head, .hero-code-window {
